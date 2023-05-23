@@ -4,7 +4,7 @@ import {Layout, Menu, theme, Input, Form, Button, Card} from 'antd';
 import FormItem from "antd/es/form/FormItem";
 import {Vietati} from "./InfInterface";
 import AddCardsList from "./providerStore";
-
+import LoginFunction from './loginFunction';
 const { Header, Content, Footer, Sider } = Layout;
 
 interface Menu{
@@ -60,6 +60,7 @@ const App: React.FC = () => {
                     ))}
                 </Menu>
             </Header>
+            <LoginFunction/>
             <Content style={{ padding: '0 50px' }}>
                 <Layout style={{ padding: '24px 0', background: colorBgContainer }}>
                     <Sider style={{ background: colorBgContainer }} width={200}>
@@ -114,7 +115,7 @@ const App: React.FC = () => {
                 </Layout>
             </Content>
             <AddCardsList/>
-            <Footer style={{ textAlign: 'center' }}>Creat de către Barbacari Daniel, student grupa CR-202.</Footer>
+            <Footer style={{ textAlign: 'center' }}>Creat de către Pruteanu Dumitru, student grupa CR-202.</Footer>
         </Layout>
 
     );
