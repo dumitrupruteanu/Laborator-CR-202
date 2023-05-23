@@ -44,27 +44,27 @@ function LoginWindow({ onClose }: LoginWindowProps) {
 
     return (
         <div className="login-form-overlay">
-        <div className="login-form-container">
-        <form onSubmit={submitAction}>
-            <h2>Introduceți numele de utilizator și parola</h2>
-    <div>
-    <label htmlFor="username" className={"userNam"}>  Numele de utilizator:  </label>
-    <input type="text" id="username" value={userName} onChange={changeUserName} />
-    </div>
-    <div>
-    <label htmlFor="password" className={"passwd"}>Parola:</label>
-    <input type="password" id="password" value={passwd} onChange={changePasswd} />
-    </div>
-    <div className="button-container">
-    <button type="submit">Login</button>
-        <button type="button" onClick={onClose}>
-        Close
-        </button>
+            <div className="login-form-container">
+                <form onSubmit={submitAction}>
+                    <h2>Introduceți numele de utilizator și parola</h2>
+                    <div>
+                        <label htmlFor="username" className={"userNam"}>  Numele de utilizator:  </label>
+                        <input type="text" id="username" value={userName} onChange={changeUserName} />
+                    </div>
+                    <div>
+                        <label htmlFor="password" className={"passwd"}>Parola:</label>
+                        <input type="password" id="password" value={passwd} onChange={changePasswd} />
+                    </div>
+                    <div className="button-container">
+                        <button type="submit">Login</button>
+                        <button type="button" onClick={onClose}>
+                            Close
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
-        </form>
-        </div>
-        </div>
-);
+    );
 }
 
 export default LoginWindow;

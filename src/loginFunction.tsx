@@ -30,25 +30,25 @@ export default function LoginButton(): JSX.Element {
     return (
         <div>
             {loggedInUser ? (
-                    <div>
-                        <button className="login-button" onClick={makeLogout}>
-                    Logout
+                <div>
+                    <button className="login-button" onClick={makeLogout}>
+                        Logout
                     </button>
                     <p className={"loggedUserName"}> Logat ca  <b> {loggedInUser} </b> </p>
-    </div>
-) : (
-        <button className="login-button" onClick={onLoginButtonClick}>
-        Login
-        </button>
-)}
+                </div>
+            ) : (
+                <button className="login-button" onClick={onLoginButtonClick}>
+                    Login
+                </button>
+            )}
 
-    {showLoginWindow && (
-        <div className="modal">
-        <div className="modal-content">
-        <LoginForm onClose={() => setShowLoginWindow(false)} onLogin={() => makeLogin} />
-    </div>
-    </div>
-    )}
-    </div>
-);
+            {showLoginWindow && (
+                <div className="modal">
+                    <div className="modal-content">
+                        <LoginForm onClose={() => setShowLoginWindow(false)} onLogin={() => makeLogin} />
+                    </div>
+                </div>
+            )}
+        </div>
+    );
 }

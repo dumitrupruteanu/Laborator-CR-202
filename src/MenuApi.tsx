@@ -20,14 +20,14 @@ export default function MenuApi() {
     return (
         <div>
             <h1>Gallery</h1>
-        <div className="menu-container">
-        {menuData.map((menu: Menu) => (
-                <div key={menu.id} className="menu-item">
-            <img src={menu.thumbnailUrl} alt={menu.title} />
-    <h3>{menu.title}</h3>
-    </div>
-))}
-    </div>
-    </div>
-);
+            <div className="menu-container">
+                {menuData.map((menu: Menu) => (
+                    <div key={menu.id} className="menu-item">
+                        <img src={menu.thumbnailUrl} alt={menu.title} />
+                        <h3>{menu.title}</h3>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 }
