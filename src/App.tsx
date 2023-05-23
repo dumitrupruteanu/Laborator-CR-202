@@ -114,7 +114,7 @@ const App: React.FC = () => {
                 </Layout>
             </Content>
             <AddCardsList/>
-            <Footer style={{ textAlign: 'center' }}>Creat de către Barbacari Daniel, student grupa CR-202.</Footer>
+            <Footer style={{ textAlign: 'center' }}>Creat de către Pruteanu Dumitru, student grupa CR-202.</Footer>
         </Layout>
 
     );
