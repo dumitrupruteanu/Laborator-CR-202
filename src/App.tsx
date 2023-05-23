@@ -3,6 +3,7 @@ import './App.css';
 import {Layout, Menu, theme, Input, Form, Button, Card} from 'antd';
 import FormItem from "antd/es/form/FormItem";
 import {Vietati} from "./InfInterface";
+import AddCardsList from "./providerStore";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -112,8 +113,10 @@ const App: React.FC = () => {
                     </Content>
                 </Layout>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>Creat de către Pruteanu Dumitru, student grupa CR-202.</Footer>
+            <AddCardsList/>
+            <Footer style={{ textAlign: 'center' }}>Creat de către Barbacari Daniel, student grupa CR-202.</Footer>
         </Layout>
+
     );
 };
 
